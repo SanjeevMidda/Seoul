@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.mainPage {
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(234, 246, 133);
+  animation: left 1s;
+}
+
+.info {
+  width: 80vw;
+}
+
+h1 {
+  font-size: 200px;
+  height: 184px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  margin: 10px;
+  margin-top: -30px;
+}
+
+h4 {
+  text-align: right;
+}
+
+.contents {
+  margin: 10px;
+}
+
+h1 {
+  margin-right: 100px;
+}
+
+#allContent {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+#allContent span h3 {
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  animation: right 1s;
+}
+
+.info h1 {
+  animation: wobble 2s;
+}
+
+@keyframes left {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes right {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes wobble {
+  from {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
